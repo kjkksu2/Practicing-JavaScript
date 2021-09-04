@@ -1,0 +1,97 @@
+@import "./reset.css";
+@import "./photos.css";
+@import "./button.css";
+@import "./debut.css";
+@import "./weather.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: black;
+  padding: 70px 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.outer-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f28cd5, #f5abe0, #94dff8, #52cbf3);
+  box-shadow: -5px 5px 25px #c70076, 7px -7px 10px #277ad7;
+  border-radius: 30px;
+}
+.logo {
+  position: absolute;
+  right: -5vw;
+  top: -1vh;
+  transform: rotate(20deg);
+  border: 3px solid #fbd4fa;
+  color: #fbd4fa;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 2vw;
+  z-index: 1;
+
+  box-shadow: -5px 5px 10px #cb2ca5, 5px -5px 10px #cb2ca5 inset,
+    5px -5px 10px #cb2ca5, -5px 5px 10px #cb2ca5 inset;
+  animation: twinkle 2s linear infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.inner-bg {
+  position: absolute;
+  bottom: 0.7vh;
+  right: 0.4vw;
+  width: 99%;
+  height: 98%;
+  background-color: black;
+  box-shadow: 5px -5px 25px #c70076 inset, -7px 7px 10px #277ad7 inset;
+  border-radius: 30px;
+
+  display: flex;
+}
+.inner-bg__first-column {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+}
+.inner-bg__second-column {
+}
