@@ -1,0 +1,21 @@
+.debut {
+  position: absolute;
+  bottom: 90px;
+  background-color: #7ccbaa;
+  padding: 20px 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.debut span {
+  display: block;
+  color: black;
+  text-align: center;
+  line-height: 150%;
+}
+.debut span:first-child::first-letter {
+  font-size: 25px;
+  font-weight: 600;
+}

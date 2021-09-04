@@ -1,0 +1,36 @@
+.debut-button,
+.weather-button {
+  background-color: #a09ee7;
+  color: #466e5e;
+
+  margin-top: 50px;
+  padding: 8px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+
+  font-size: 1.2vw;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.debut-button:hover,
+.weather-button:hover {
+  animation: shake 0.5s linear infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+.debut-button:active,
+.weather-button:active {
+  animation: none;
+  text-shadow: -1px -1px 3px white, 1px 1px 3px white;
+}
