@@ -82,6 +82,7 @@ const clickWeatherBtn = () => {
       [{ opacity: 1 }, { transform: "translateY(10px)", opacity: 0 }],
       {
         duration: 500,
+        easing: "linear",
         fill: "forwards",
       }
     );
