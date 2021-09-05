@@ -1,10 +1,14 @@
 @import "./reset.css";
-@import "./photos.css";
 
 /* main */
 @import "./main/debut.css";
 @import "./main/photos.css";
 @import "./main/weather.css";
+@import "./main/checkList.css";
+
+/* common */
+@import "./common/button.css";
+@import "./common/seeMoreList.css";
 
 * {
   box-sizing: border-box;
@@ -96,4 +100,5 @@ body {
   padding: 30px 40px;
 }
 .inner-bg__second-column {
+  width: 72%;
 }
