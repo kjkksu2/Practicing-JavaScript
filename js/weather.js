@@ -27,8 +27,6 @@ const getLocation = async (pos) => {
     )
   ).json();
 
-  console.log(info);
-
   const {
     name,
     sys: { country },
