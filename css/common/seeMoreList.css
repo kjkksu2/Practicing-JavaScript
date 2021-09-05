@@ -1,0 +1,30 @@
+.content {
+  position: relative;
+}
+.seeMoreList {
+  position: absolute;
+  top: 30px;
+  width: 98%;
+  height: 47vh;
+  background-color: #7ccbaa;
+}
+.write-seeMore-list li {
+  color: black;
+  margin: 0px 5px;
+  font-size: 1.5vw;
+  letter-spacing: 3px;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  align-items: center;
+  word-break: break-all;
+}
+.write-seeMore-list li span:last-child {
+  font-size: 1vw;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: purple;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
