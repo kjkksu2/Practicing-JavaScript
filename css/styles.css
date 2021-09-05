@@ -1,8 +1,10 @@
 @import "./reset.css";
 @import "./photos.css";
-@import "./button.css";
-@import "./debut.css";
-@import "./weather.css";
+
+/* main */
+@import "./main/debut.css";
+@import "./main/photos.css";
+@import "./main/weather.css";
 
 * {
   box-sizing: border-box;
